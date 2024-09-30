@@ -272,7 +272,7 @@ public class Main {
                 System.out.print(arr[i] + " ");
             }
         }
-        System.out.println(); // Nueva línea al final
+        System.out.println();
     }
     public static void mult(int[][] matriz1, int[][] matriz2, int[][] resultado) {
         for (int i = 0; i < 4; i++) {
@@ -285,10 +285,14 @@ public class Main {
         }
     }
     public static void trans(int [][]matriz,int[][]trans){
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                trans[j][i] = matriz[i][j];
-            }
-        }
+        trans[0][0]=matriz[0][0];
+        trans[0][1]=matriz[1][0];
+        trans[0][2]=matriz[2][0];
+        trans[1][0]=matriz[0][1];
+        trans[1][1]=matriz[1][1];
+        trans[1][2]=matriz[2][1];
+        trans[2][0]=matriz[0][2];
+        trans[2][1]=matriz[1][2];
+        trans[2][2]=matriz[2][2];
     }
 }
